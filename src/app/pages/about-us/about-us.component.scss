@@ -1,0 +1,17 @@
+@import "../../../palette";
+
+.about-container {
+  padding: 50px;
+  position: relative;
+  top: -150px;
+  background: $gray;
+  color: $black;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.worth-container {
+  border:1px solid $white;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 16px;
+}

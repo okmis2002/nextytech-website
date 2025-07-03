@@ -1,0 +1,23 @@
+<div class="container-fluid">
+  <div class="row section-1">
+    <div class="col-12 section-title">
+      <h2>Nuestros servicios</h2>
+    </div>
+  </div>
+</div>
+<div class="container services-container">
+  <div class="col-12">
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-4 p-2" *ngFor="let s of services">
+        <div class="section-service">
+          <h4>{{ s.title }}</h4>
+          <br>
+          <p>{{ s.description }}</p>
+          <button class="btn btn-primary" (click)="s.callToAction()" style="position: absolute;bottom: 15px; right: 15px">
+            <i class="fa fa-eye"></i> Más información
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,63 @@
+<app-banner [imgPath]="'/assets/img/about_us.webp'" [altImg]="'about_us.webp'"></app-banner>
+<div class="container about-container">
+  <div class="row">
+    <div class="col-12" style="text-align: center">
+      <h2>Next&Tech</h2>
+      <p>Un desarrollo innovador para sus necesidades únicas.</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12">
+      <p>
+        Somos una empresa de desarrollo de software apasionada por crear soluciones que satisfagan las necesidades
+        únicas de nuestros clientes. Nos especializamos en el desarollo de aplicaciónes web, aplicaciones móviles,
+        software empresarial, asesorías, etc.
+      </p>
+    </div>
+  </div>
+  <hr>
+  <div class="row justify-content-center">
+    <div class="col-xs-12 col-sm-12 col-md-4" style="text-align: center">
+      <h3>Misión</h3>
+      <img src="/assets/img/mision.jpg" alt="mision.jpg" style="height: 150px;width: 100%;border-radius: 0px 0px 50px
+       50px;margin-bottom: 30px">
+      <p>
+        Revolucionar la industria del software creando soluciones innovadoras que superen las expectativas de
+        nuestros clientes y transformen su forma de trabajar.
+      </p>
+    </div>
+    <div class="col-xs-12 col-sm-12 col-md-4" style="text-align: center">
+      <h3>Visión</h3>
+      <img src="/assets/img/vision.jpg" alt="vision.jpg" style="height: 150px;width: 100%;border-radius: 0px 0px 50px
+       50px;margin-bottom: 30px">
+      <p>
+        Convertirnos en un referente nacional en desarrollo de software de vanguardia, siendo reconocidos por nuestra
+        excelencia, creatividad y compromiso con la satisfacción del cliente.
+      </p>
+    </div>
+  </div>
+</div>
+<div class="container-fluid section-2">
+  <div class="container">
+      <div class="row justify-content-center">
+          <div class="col-xs-12 col-sm-12 col-md-10 section-title">
+              <h2>Nuestros valores</h2>
+              <p>
+                  Nuestros valores son los principios rectores que guían las acciones y decisiones de nuestra organización,
+                  y reflejan nuestro compromiso con la innovación, la calidad, la colaboración y el éxito de nuestros
+                  clientes.
+              </p>
+          </div>
+          <div class="col-12">
+              <div class="row justify-content-center" *ngFor="let w of worths">
+                  <div class="col-xs-12 col-sm-12 col-md-10">
+                      <div class="worth-container">
+                          <h4>{{w.title}}</h4>
+                          <p>{{w.description}}</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>

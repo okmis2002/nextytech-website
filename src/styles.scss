@@ -1,0 +1,42 @@
+@import "palette";
+@import "fonts";
+
+body {
+  background-color: $gray;
+}
+
+.section-1 {
+  background: $black;
+  color: $gray;
+  padding-bottom: 50px;
+  border: 10px dotted green;
+}
+
+.section-2 {
+  background: $gray;
+  color: $black;
+  padding-bottom: 50px;
+  border: 10px solid red;
+}
+
+.section-title {
+  text-align: center;
+  margin-top: 50px;
+  height: 150px;
+}
+
+.btn-primary {
+  background: $gold;
+  border-color: $gold;
+  
+}
+
+.btn-primary:hover {
+  background: $gray;
+  border-color: $gold;
+  color: $gold;
+}
+
+.title {
+  padding-top: 50px;
+}

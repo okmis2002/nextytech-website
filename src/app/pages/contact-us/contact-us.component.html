@@ -1,0 +1,81 @@
+<div class="container-fluid">
+  <div class="row section-1">
+    <div class="col-12 section-title">
+      <h2>Contáctenos</h2>
+      <br>
+    </div>
+    <div class="col-12">
+      <div class="row justify-content-center">
+        <div class="col-xs-12 col-sm-12 col-md-10 col-lg-10">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1182.1557348501235!2d-74.21530250948818!3d4.72098890313443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f82a636d31a8b%3A0x89d5dd3b56d4daac!2sCl.%2014a%20%2319-45%2C%20Funza%2C%20Cundinamarca!5e0!3m2!1ses-419!2sco!4v1717346171092!5m2!1ses-419!2sco" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+    <div class="col-12">
+      <div class="row justify-content-center">
+        <div class="col-xs-12 col-sm-12 col-md-7">
+          <div class="row">
+            <div class="col-12 mt-5">
+              <p>Ingrese su mensaje y estaremos en contacto cuanto antes.</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-6">
+              <label>Nombre</label>
+              <input class="form-control" type="text" name="name" id="name" [(ngModel)]="name">
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-6">
+              <label>Apellido</label>
+              <input class="form-control" type="text" name="lastname" id="lastname" [(ngModel)]="surname">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <label>Correo electrónico</label>
+              <input class="form-control" type="email" name="email" id="email" [(ngModel)]="email">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <label>Celular</label>
+              <input class="form-control" type="number" name="phone" id="phone" [(ngModel)]="phone">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <label>Mensaje</label>
+              <textarea class="form-control" name="message" id="message" cols="30" rows="8" [(ngModel)]="message"></textarea>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <br>
+              <button class="btn btn-primary btn-block" (click)="getFormData()">
+                <i class="fa fa-mail-forward"></i> Enviar
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-3 mt-5">
+          <h4>Dirección</h4>
+          <p>Calle 14A #19 - 45 Barrio El Lago - Funza (Cundinamarca)</p>
+          <h4>Correo electrónico</h4>
+          <p></p>
+          <h4>Número telefónico</h4>
+          <ul>
+            <li>
+              <a href="https://wa.me/3144352585" target="_blank">
+                <i class="fa fa-phone"></i> (+57) 314 435 2585
+              </a>
+            </li>
+            <li>
+              <a href="https://wa.me/3214655682" target="_blank">
+                <i class="fa fa-phone"></i> (+57) 321 465 5682
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
