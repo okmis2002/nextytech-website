@@ -33,4 +33,4 @@ jobs:
 
       - name: Deploy
         if: success()
-        run: aws s3 sync ./dist/multinivel-webapp/browser s3://nextytech-website-files
+        run: aws s3 sync ./dist/nyt_website s3://nextytech-website-files
